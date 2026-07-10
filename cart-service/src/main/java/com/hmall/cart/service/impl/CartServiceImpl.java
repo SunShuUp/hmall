@@ -93,7 +93,7 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
         // 2.查询商品
         //List<ItemDTO> items = itemService.queryItemByIds(itemIds);
         ResponseEntity<List<ItemDTO>> response=restTemplate.exchange(
-                "http://localhost:8081/items/?ids=${ids}",
+                "http://localhost:8081/items?ids={ids}",
                 HttpMethod.GET,
                 null,
                 new ParameterizedTypeReference<List<ItemDTO>>() {},
