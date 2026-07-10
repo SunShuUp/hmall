@@ -1,6 +1,9 @@
 package com.hmall.cart.service.impl;
 
+import cn.hutool.core.util.RadixUtil;
+import cn.hutool.core.util.RandomUtil;
 import cn.hutool.core.util.StrUtil;
+import com.alibaba.nacos.client.naming.utils.CollectionUtils;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.hmall.cart.domain.dto.CartFormDTO;
@@ -15,6 +18,8 @@ import com.hmall.common.utils.CollUtils;
 import com.hmall.common.utils.UserContext;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.ServiceInstance;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;
@@ -23,6 +28,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.method.HandlerMethod;
 
+import java.net.URI;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -44,6 +50,9 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
 
     // TODO private final IItemService itemService;
     private final RestTemplate restTemplate;
+
+    private final DiscoveryClient discoveryClient;
+    private final ServiceInstance serviceInstance;
 
     @Override
     public void addItem2Cart(CartFormDTO cartFormDTO) {
@@ -92,8 +101,15 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements IC
         Set<Long> itemIds = vos.stream().map(CartVO::getItemId).collect(Collectors.toSet());
         // 2.查询商品
         //List<ItemDTO> items = itemService.queryItemByIds(itemIds);
+        //根据服务名称获取服务的实力
+        List<ServiceInstance> instances=discoveryClient.getInstances("item-service");
+        if(CollectionUtils.isEmpty(instances)){
+            return;
+        }
+        //手写负载均衡 挑选一个服务
+        ServiceInstance serviceInstance=instances.get(RandomUtil.randomInt(instances.size()));
         ResponseEntity<List<ItemDTO>> response=restTemplate.exchange(
-                "http://localhost:8081/items?ids={ids}",
+                serviceInstance.getUri()+"/items?ids={ids}",
                 HttpMethod.GET,
                 null,
                 new ParameterizedTypeReference<List<ItemDTO>>() {},
