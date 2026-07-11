@@ -9,8 +9,10 @@
 /Users/suns/IdeaProjects/hmall/hm-common/src/main/java/com/hmall/common/exception/BizIllegalException.java
 /Users/suns/IdeaProjects/hmall/hm-common/src/main/java/com/hmall/common/config/JsonConfig.java
 /Users/suns/IdeaProjects/hmall/hm-common/src/main/java/com/hmall/common/utils/BeanUtils.java
+/Users/suns/IdeaProjects/hmall/hm-common/src/main/java/com/hmall/common/config/MvcConfig.java
 /Users/suns/IdeaProjects/hmall/hm-common/src/main/java/com/hmall/common/advice/CommonExceptionAdvice.java
 /Users/suns/IdeaProjects/hmall/hm-common/src/main/java/com/hmall/common/utils/CookieBuilder.java
+/Users/suns/IdeaProjects/hmall/hm-common/src/main/java/com/hmall/common/interceptors/UserInfoInterceptor.java
 /Users/suns/IdeaProjects/hmall/hm-common/src/main/java/com/hmall/common/domain/R.java
 /Users/suns/IdeaProjects/hmall/hm-common/src/main/java/com/hmall/common/utils/CollUtils.java
 /Users/suns/IdeaProjects/hmall/hm-common/src/main/java/com/hmall/common/exception/ForbiddenException.java

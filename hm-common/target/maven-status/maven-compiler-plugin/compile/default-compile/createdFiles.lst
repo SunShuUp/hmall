@@ -3,8 +3,10 @@ com/hmall/common/exception/UnauthorizedException.class
 com/hmall/common/utils/UserContext.class
 com/hmall/common/config/MyBatisConfig.class
 com/hmall/common/exception/ForbiddenException.class
+com/hmall/common/interceptors/UserInfoInterceptor.class
 com/hmall/common/exception/BizIllegalException.class
 com/hmall/common/domain/PageQuery.class
+com/hmall/common/config/MvcConfig.class
 com/hmall/common/utils/Convert.class
 com/hmall/common/domain/R.class
 com/hmall/common/domain/PageDTO.class
