@@ -1,0 +1,17 @@
+/Users/suns/IdeaProjects/hmall/trade-service/src/main/java/com/hmall/trade/mapper/OrderMapper.java
+/Users/suns/IdeaProjects/hmall/trade-service/src/main/java/com/hmall/trade/controller/OrderController.java
+/Users/suns/IdeaProjects/hmall/trade-service/src/main/java/com/hmall/trade/query/ItemPageQuery.java
+/Users/suns/IdeaProjects/hmall/trade-service/src/main/java/com/hmall/trade/domain/vo/OrderVO.java
+/Users/suns/IdeaProjects/hmall/trade-service/src/main/java/com/hmall/trade/service/impl/OrderDetailServiceImpl.java
+/Users/suns/IdeaProjects/hmall/trade-service/src/main/java/com/hmall/trade/service/IOrderService.java
+/Users/suns/IdeaProjects/hmall/trade-service/src/main/java/com/hmall/trade/TradeApplication.java
+/Users/suns/IdeaProjects/hmall/trade-service/src/main/java/com/hmall/trade/service/impl/OrderServiceImpl.java
+/Users/suns/IdeaProjects/hmall/trade-service/src/main/java/com/hmall/trade/domain/po/OrderDetail.java
+/Users/suns/IdeaProjects/hmall/trade-service/src/main/java/com/hmall/trade/domain/po/OrderLogistics.java
+/Users/suns/IdeaProjects/hmall/trade-service/src/main/java/com/hmall/trade/domain/dto/OrderFormDTO.java
+/Users/suns/IdeaProjects/hmall/trade-service/src/main/java/com/hmall/trade/domain/po/Order.java
+/Users/suns/IdeaProjects/hmall/trade-service/src/main/java/com/hmall/trade/service/IOrderDetailService.java
+/Users/suns/IdeaProjects/hmall/trade-service/src/main/java/com/hmall/trade/mapper/OrderLogisticsMapper.java
+/Users/suns/IdeaProjects/hmall/trade-service/src/main/java/com/hmall/trade/service/impl/OrderLogisticsServiceImpl.java
+/Users/suns/IdeaProjects/hmall/trade-service/src/main/java/com/hmall/trade/mapper/OrderDetailMapper.java
+/Users/suns/IdeaProjects/hmall/trade-service/src/main/java/com/hmall/trade/service/IOrderLogisticsService.java

@@ -13,6 +13,9 @@ spring:
   cloud:
     nacos:
       server-addr: 127.0.0.1:8848
+feign:
+  okhttp:
+    enabled: true #开启openFeign连接池支持
 mybatis-plus:
   configuration:
     default-enum-type-handler: com.baomidou.mybatisplus.core.handlers.MybatisEnumTypeHandler

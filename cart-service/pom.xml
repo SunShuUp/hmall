@@ -40,9 +40,16 @@
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
         </dependency>
+        <!--nacos-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+        <!-- api-service-->
+        <dependency>
+            <groupId>com.hmail.api</groupId>
+            <artifactId>hm-api</artifactId>
+            <version>1.0.0</version>
         </dependency>
     </dependencies>
     <build>
