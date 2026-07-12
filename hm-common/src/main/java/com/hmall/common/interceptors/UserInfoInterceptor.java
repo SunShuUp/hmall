@@ -9,8 +9,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * 拦截器
- * 但是在这里着只做用户信息获取
+ *     公共 MVC 拦截器。读取网关传来的 user-info，
+ *     写入 UserContext，请求结束后清理。
+ *     cart-service、trade-service、pay-service、user-service 里的业务代码都在用 UserContext.getUser()，不能删。
  */
 public class UserInfoInterceptor implements HandlerInterceptor {
     @Override

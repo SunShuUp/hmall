@@ -3,3 +3,4 @@ hm:
     host: mysql
     pw: root
     port: 3306
+    database: hm-cart

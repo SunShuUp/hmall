@@ -3,3 +3,4 @@ hm:
     host: 127.0.0.1
     pw: manager123
     port: 3306
+    database: hm-cart

@@ -17,6 +17,9 @@ import reactor.core.publisher.Mono;
 
 import java.util.List;
 
+/**
+ *     网关登录校验过滤器。校验 authorization token，解析用户 id，然后向下游请求写入 user-info 请求头
+ */
 @Component
 @RequiredArgsConstructor
 public class AuthGlobaFilter implements GlobalFilter, Ordered {

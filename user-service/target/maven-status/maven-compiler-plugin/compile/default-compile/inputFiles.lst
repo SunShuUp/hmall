@@ -6,7 +6,9 @@
 /Users/suns/IdeaProjects/hmall/user-service/src/main/java/com/hmall/user/domain/dto/LoginFormDTO.java
 /Users/suns/IdeaProjects/hmall/user-service/src/main/java/com/hmall/user/domain/dto/AddressDTO.java
 /Users/suns/IdeaProjects/hmall/user-service/src/main/java/com/hmall/user/domain/po/User.java
+/Users/suns/IdeaProjects/hmall/user-service/src/main/java/com/hmall/user/config/AuthProperties.java
 /Users/suns/IdeaProjects/hmall/user-service/src/main/java/com/hmall/user/controller/AddressController.java
+/Users/suns/IdeaProjects/hmall/user-service/src/main/java/com/hmall/user/config/MvcConfig.java
 /Users/suns/IdeaProjects/hmall/user-service/src/main/java/com/hmall/user/mapper/UserMapper.java
 /Users/suns/IdeaProjects/hmall/user-service/src/main/java/com/hmall/user/service/IUserService.java
 /Users/suns/IdeaProjects/hmall/user-service/src/main/java/com/hmall/user/config/JwtProperties.java

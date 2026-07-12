@@ -1,4 +1,5 @@
 /Users/suns/IdeaProjects/hmall/hm-api/src/main/java/com/hmall/api/config/DefaultFeignConfig.java
+/Users/suns/IdeaProjects/hmall/hm-api/src/main/java/com/hmall/api/interceptor/DefineRequestInterceptor.java
 /Users/suns/IdeaProjects/hmall/hm-api/src/main/java/com/hmall/api/dto/ItemDTO.java
 /Users/suns/IdeaProjects/hmall/hm-api/src/main/java/com/hmall/api/client/ItemClient.java
 /Users/suns/IdeaProjects/hmall/hm-api/src/main/java/com/hmall/api/po/Order.java
