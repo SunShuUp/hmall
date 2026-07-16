@@ -5,4 +5,15 @@ hm:
     title: 商品接口服务
     desc: 黑马商城商品接口服务
     package: hm.hmall.item.controller
+feign:
+  okhttp:
+    enabled: true #开启openFeign连接池支持
+  sentinel:
+    enabled: true #开启feign对sentinel的支持
 
+spring:
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8090
+      http-method-specify: true # 开启请求方式前缀

@@ -1,10 +1,23 @@
 server:
   port: 8082
+  tomcat:
+    threads:
+      max: 200 #允许的最大线程数
+    accept-count: 100 #最大排队数量等待
+    max-connections: 8192 #允许的最大连接池
 feign:
   okhttp:
     enabled: true #开启openFeign连接池支持
+  sentinel:
+    enabled: true #开启feign对sentinel的支持
 hm:
   swagger:
     title: "购物车接口服务"
     desc: "黑马商城购物车接口服务"
     package: hm.hmall.cart.controller
+spring:
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8090
+      http-method-specify: true # 开启请求方式前缀

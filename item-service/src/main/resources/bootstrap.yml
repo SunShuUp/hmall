@@ -12,3 +12,8 @@ spring:
           - data-id: shared-jdbc.yaml
           - data-id: shared-log.yaml
           - data-id: shared-swagger.yaml
+          - data-id: shared-seata.yaml
+    sentinel:
+      transport:
+        dashboard: localhost:8090
+      http-method-specify: true # 开启请求方式前缀
